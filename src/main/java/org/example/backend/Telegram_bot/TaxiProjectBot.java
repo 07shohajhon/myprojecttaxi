@@ -2792,8 +2792,6 @@ else if(data.equals("car")){
         Optional<User> byChatId = userRepo.findByChatId(chatId);
         User user = byChatId.get();
         List<List<InlineKeyboardButton>> rows = new ArrayList<>();
-
-
         List<InlineKeyboardButton> row1 = new ArrayList<>();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
         if (user.getLanguage().equals("uz")) {
